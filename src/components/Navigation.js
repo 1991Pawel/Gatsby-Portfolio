@@ -12,6 +12,7 @@ const ToggleButton = styled.button`
     border: 0;
     margin: 0;
     margin-left:auto;
+    z-index:10;
 
     @media only screen and (min-width: 600px) {
         display: none;
@@ -86,6 +87,7 @@ const Nav = styled.nav`
         transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};
         background-color:#0077ED;
         transition: transform .3s;
+        z-index:9;
     } 
     
     li {
@@ -106,6 +108,7 @@ const Nav = styled.nav`
 
         @media only screen and (max-width: 600px) {
         font-size:2rem;
+        color:#fff;
         } 
     }
 }`;
