@@ -1,10 +1,15 @@
 import React from "react"
+import Navigation from './Navigation'
+import styled from 'styled-components'
 
+const StyledHeader = styled.header`
+  grid-column:1 / -1;
+
+`
 const Header = () => (
-  <header>
-    <h2>Header</h2>
-  </header>
+  <StyledHeader>
+    <Navigation />
+  </StyledHeader>
 )
-
 
 export default Header
