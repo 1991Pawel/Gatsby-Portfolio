@@ -11,8 +11,8 @@ import ContactSection from '../templates/ContactSection'
 
 const IndexPage = () => (
   <Layout>
-    <IntroSection id="intro" />
-    <ProjectSection id="project" />
+    <IntroSection />
+    <ProjectSection />
     <ContactSection />
   </Layout>
 )
