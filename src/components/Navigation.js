@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, createRef, useEffect } from 'react'
 import styled from 'styled-components'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Logo from './Logo'
@@ -116,11 +116,27 @@ const Nav = styled.nav`
 
 const Navigation = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const yourElement = createRef();
+
+    const handleCloseMenu = (e) => {
+        if (yourElement.current && yourElement.current.contains(e.target)) {
+            setNavbarOpen(false)
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener("click", handleCloseMenu);
+        return () => {
+
+            window.removeEventListener("click", handleCloseMenu);
+        };
+    });
 
     return (
         <Nav navbarOpen={navbarOpen}>
             <Logo />
-            <ul>
+            <ul ref={yourElement}>
                 <li>
                     <AnchorLink to="/#intro" title="start" />
                 </li>
