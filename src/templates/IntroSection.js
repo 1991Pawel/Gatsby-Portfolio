@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Button } from '../components/Button';
 
 const IntroSectionWrapper = styled.section`
   position:relative;
@@ -77,15 +78,7 @@ const SpecialText = styled.span`
    color: #0099F2;
 `;
 
-const IntroBtn = styled.button`
-   height:4rem;
-   min-width:12rem;
-   background:#000;
-   color:#fff;
-   border:none;
-   text-transform:uppercase;
-   cursor: pointer;
-`;
+
 
 
 const IntroSection = () =>
@@ -101,9 +94,9 @@ const IntroSection = () =>
                 Gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
         </p>
       </IntroContent>
-      <IntroBtn>
+      <Button>
         Portfolio
-             </IntroBtn>
+        </Button>
     </IntroSectionWrapper>
   );
 
