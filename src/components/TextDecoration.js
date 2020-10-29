@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const TextDecoration = styled.span`
 position:relative;
-font-size:1.6rem;
 font-weight:500;
 margin-left:3rem;
 display:block;
@@ -19,8 +18,4 @@ display:block;
   background:#0099F2;
   transform:translateY(-50%);
 }
-
-@media only screen and (min-width: 800px) {  
-    font-size:2rem;
-  } 
 `;

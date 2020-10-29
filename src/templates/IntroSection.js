@@ -5,7 +5,6 @@ import { TextDecoration } from '../components/TextDecoration';
 
 const IntroSectionWrapper = styled.section`
   position:relative;
-  
   grid-column:2 /span 2;
   min-height:40vh;
   margin-top:3rem;
@@ -28,26 +27,27 @@ const IntroSectionWrapper = styled.section`
     } 
     @media only screen and (min-width: 1000px) {  
     font-size:20rem;
-  } 
+    } 
   }
 
   button {
     margin-top:2rem;
   }
 
-  p{
-    margin-top:1rem;
+    p{
+      margin-top:1rem;
+      line-height: 3rem;
+      @media only screen and (min-width: 800px) {  
+        font-size:2rem;
+    } 
 
-    @media only screen and (min-width: 800px) {  
-    font-size:2rem;
-  } 
   }
 `;
 const IntroContent = styled.div`
   font-weight:500;
   @media only screen and (min-width: 600px) {  
       width:70%;
-      max-width:500px;
+      max-width:650px;
   } 
 
 `;
@@ -58,6 +58,14 @@ const IntroTitle = styled.h1`
   @media only screen and (min-width: 800px) {  
     font-size:5rem;
   } 
+
+  span {
+    font-size:1.6rem;
+    @media only screen and (min-width: 800px) {  
+    font-size:2rem;
+  } 
+  }
+
 `;
 
 const SpecialText = styled.span`
