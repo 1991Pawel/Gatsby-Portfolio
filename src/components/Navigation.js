@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Logo from './Logo'
-
 
 const ToggleButton = styled.button`
     display:block;
@@ -122,13 +122,13 @@ const Navigation = () => {
             <Logo />
             <ul>
                 <li>
-                    <a href="">Start</a>
+                    <AnchorLink to="/#intro" title="start" />
                 </li>
                 <li>
-                    <a href="">Portfolio</a>
+                    <AnchorLink to="/#project" title="portfolio" />
                 </li>
                 <li>
-                    <a href="">Kontakt</a>
+                    <AnchorLink to="/#contact" title="kontakt" />
                 </li>
             </ul>
             <ToggleButton

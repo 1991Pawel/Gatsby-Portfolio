@@ -23,7 +23,7 @@ const ContactSection = () => {
 
 
   return (
-    <ContactSectionWrapper>
+    <ContactSectionWrapper id="contact">
       <h2>Kontakt</h2>
     </ContactSectionWrapper>
   )

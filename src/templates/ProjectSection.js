@@ -127,16 +127,14 @@ const ProjectSection = () => {
 
 
   return (
-    <PortfolioSectionWrapper>
+    <PortfolioSectionWrapper id="project">
       <h2>Portfolio</h2>
       <Project>
         <ProjectContent>
           <h3>Landing Page</h3>
           <p>
-            Komercyjny projekt wykonany dla fotografa.
-            Strona posiada połączenie z hedless CMS
-            Komercyjny projekt wykonany dla fotografa.
-            Strona posiada połączenie z hedless CMS
+            Komercyjny projekt wykonany dla fotografa,
+            strona posiada połączenie z hedless CMS
                     </p>
           <p><TextDecoration>
             Technologie
@@ -145,7 +143,7 @@ const ProjectSection = () => {
           <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
             Uruchom
           </Button>
-          <Button secondary>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/gatsby-cms">
             GitHub
           </Button>
         </ProjectContent>
@@ -164,10 +162,10 @@ const ProjectSection = () => {
             Technologie
                     </TextDecoration>
           <p>HTML , CSS, JS</p>
-          <Button>
+          <Button target="_blank" rel="noreferrer" href="http://korzeniecka.pl/">
             Uruchom
                     </Button>
-          <Button secondary>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/fitness-website">
             GitHub
                     </Button>
         </ProjectContent>
@@ -179,7 +177,7 @@ const ProjectSection = () => {
         <ProjectContent>
           <h3>Landing Page</h3>
           <p>
-            Aplikacja do zarzadzania zadaniami
+            Aplikacja do zarzadzania zadaniami,
             dzięki niej łatwiej sledzić co jeszcze
             musimy wykonać i jaki jest stan zadania.
                     </p>
@@ -187,10 +185,10 @@ const ProjectSection = () => {
             Technologie
                     </TextDecoration>
           <p>REACT, TYPESCRIPT, FIREBASE, STYLED COMPONENTS</p>
-          <Button>
+          <Button target="_blank" rel="noreferrer" href="https://yourtaskapp.netlify.app/">
             Uruchom
                     </Button>
-          <Button secondary>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/react-firebase">
             GitHub
                     </Button>
         </ProjectContent>
