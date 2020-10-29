@@ -1,5 +1,5 @@
 import React, { useState, createRef, useEffect } from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Logo from './Logo'
 
@@ -13,6 +13,12 @@ const ToggleButton = styled.button`
     margin: 0;
     margin-left:auto;
     z-index:10;
+    
+    ${props => props.navbarOpen && css`
+        position:fixed;
+        top:1.8rem;
+        right:1rem;
+  `}
 
     @media only screen and (min-width: 600px) {
         display: none;
@@ -84,7 +90,7 @@ const Nav = styled.nav`
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};
+        transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};       
         background-color:#0077ED;
         transition: transform .3s;
         z-index:9;

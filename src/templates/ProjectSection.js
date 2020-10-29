@@ -190,7 +190,7 @@ const ProjectSection = () => {
                     </Button>
           <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/react-firebase">
             GitHub
-                    </Button>
+           </Button>
         </ProjectContent>
         <ProjectPhoto props={ThirdSamepl}>
           <img src={ThirdProject} alt="project todo app" />
