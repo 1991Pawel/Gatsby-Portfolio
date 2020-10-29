@@ -1,63 +1,21 @@
 import React from "react"
 import Layout from '../components/Layout'
 import styled from 'styled-components'
+import IntroSection from '../templates/IntroSection'
 
-const IntroSection = styled.section`
-  position:relative;
-  
-
-  grid-column:2 /span 2;
-  height:50vh;
-  margin-top:5rem;
-
-  &:before {
-    position:absolute;
-    content:'Cześć';
-    display:block;
- 
-    bottom:0;
-    left:50%;
-    transform:translateX(-50%);
-    font-size:10rem;
-    font-weight:700;
-    color:#f0f0f0;
-    z-index:-1;
-    
-    @media only screen and (min-width: 800px) {  
-      font-size:13rem;
-    } 
-  }
-
-  button {
-    margin-top:2rem;
-  }
-
-  p{
-    margin-top:1rem;
-  }
-`;
-const IntroContent = styled.div`
-  font-weight:500;
-  @media only screen and (min-width: 600px) {  
-      width:70%;
-  } 
-  @media only screen and (min-width: 800px) {  
-      width:50%;
-  } 
-`;
-
-const IntroTitle = styled.h1`
-  display:flex;
-  flex-direction:column; 
-
-  
-`;
+import FirstProject from '../images/first.jpg'
+import FirstSampel from '../images/first-sampel.jpg'
+import SecondProject from '../images/second-project.jpg'
+import SecondSampel from '../images/second-sampel.jpg'
+import ThirdProject from '../images/third-project.png'
+import ThirdSamepl from '../images/third-sampel.png'
 
 const IntroSubTitle = styled.span`
    position:relative;
    font-size:1.6rem;
    font-weight:500;
    margin-left:3rem;
+   display:block;
    
 
    &:before {
@@ -73,38 +31,157 @@ const IntroSubTitle = styled.span`
    }
 `;
 
-const SpecialText = styled.span`
-   font-weight:600;
-   color: #0099F2;
+const PortfolioSection = styled.section`
+  padding:3vh 0;
+  grid-column:2 /span 2;
+
+  h2 {
+    text-align:center;
+  }
 `;
 
-const IntroBtn = styled.button`
-   height:4rem;
-   min-width:12rem;
-   background:#000;
-   color:#fff;
-   border:none;
-   text-transform:uppercase;
-   cursor: pointer;
+const ProjectContent = styled.div`
+  width:100%;
+
+  @media only screen and (min-width: 600px) {  
+     max-width:500px;
+    }
+
+  @media only screen and (min-width: 800px) {  
+     max-width:400px;
+    }
+
 `;
+
+
+const Project = styled.div`
+  padding-bottom:6rem;
+  display:flex;
+  flex-direction:column;   
+
+      &:nth-of-type(even){
+        ${ProjectContent} {
+          @media only screen and (min-width: 800px) {  
+            order:2; 
+      }
+    }
+       
+      img:nth-of-type(1) {
+        @media only screen and (min-width: 800px) {  
+            transform:translate(-20%,-50%);
+        }
+      }
+    }
+  
+    @media only screen and (min-width: 800px) {  
+      flex-direction:row;
+      align-items:center;
+      justify-content:space-between;
+    
+     }
+
+`;
+
+
+
+const ProjectPhoto = styled.div`
+  position:relative;
+  height:300px;
+  width:100%;
+  background-image: url(${({props}) => props});
+  background-size: cover;
+  background-repeat:no-repeat;
+
+  @media only screen and (min-width: 600px) {  
+      height:500px;
+      width:100%;
+    } 
+    
+  @media only screen and (min-width: 800px) {  
+     max-width:40%;
+    } 
+ 
+
+  img {
+    position:absolute;
+    top:50%;
+    left:50%;
+    max-height: 80%;
+    max-width: 80%;
+    transform:translate(-50%,-50%);
+    filter: drop-shadow(0px 14px 28px rgba(0,0,0,0.3));
+
+ 
+    @media only screen and (min-width: 800px) {  
+      transform:translate(-80%,-50%);
+      
+    } 
+
+  
+  }
+`;
+
+
+
 
 const IndexPage = () => (
   <Layout>
-    <IntroSection>
-      <IntroContent>
-        <IntroTitle>
-          <IntroSubTitle>Nazywam się Paweł i jestem</IntroSubTitle>
-          Junior Front End Developerem
-        </IntroTitle>
-        <p>
-          Zapraszam cię do zobaczenia moich projektów
-          Gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
-        </p>
-      </IntroContent>
-      <IntroBtn>
-        Portfolio
-      </IntroBtn>
-    </IntroSection>
+    <IntroSection />
+    <PortfolioSection>
+      <h2>Portfolio</h2>
+      <Project>
+        <ProjectContent>
+          <h3>Landing Page</h3>
+          <p>
+            Kodsadmercyjny projekt wykonany dla fotografa.
+            Strona posiada połączenie z hedless CMS
+     
+            Komercyjny projekt wykonany dla fotografa.
+            Strona posiada połączenie z hedless CMS
+          </p>
+          <IntroSubTitle>
+          Technologie
+        </IntroSubTitle>
+        <p>HTML , SCSS, GATSBY, GRAPHQL, DATOCMS</p>
+        </ProjectContent>
+        <ProjectPhoto props={FirstProject}>
+          <img src={FirstSampel} />
+        </ProjectPhoto>
+      </Project>
+      <Project>
+        <ProjectContent>
+          <h3>Landing Page</h3>
+          <p>
+          Pierwszy komercyjny projekt wykonany
+          dla trenera sportów sylwetkowych.
+          </p>
+          <IntroSubTitle>
+          Technologie
+        </IntroSubTitle>
+        <p>HTML , CSS, JS</p>
+        </ProjectContent>
+        <ProjectPhoto props={SecondProject}>
+          <img src={SecondSampel} />
+        </ProjectPhoto>
+      </Project>
+      <Project>
+        <ProjectContent>
+          <h3>Landing Page</h3>
+          <p>
+            Aplikacja do zarzadzania zadaniami
+            dzięki niej łatwiej sledzić co jeszcze
+            musimy wykonać i jaki jest stan zadania.
+          </p>
+          <IntroSubTitle>
+          Technologie
+        </IntroSubTitle>
+        <p>REACT, TYPESCRIPT, FIREBASE, styled components</p>
+        </ProjectContent>
+        <ProjectPhoto props={ThirdSamepl}>
+          <img src={ThirdProject} />
+        </ProjectPhoto>
+      </Project>
+    </PortfolioSection>
   </Layout>
 )
 
