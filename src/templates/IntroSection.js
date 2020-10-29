@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
+import { Button } from '../components/Button';
+import { TextDecoration } from '../components/TextDecoration';
 
 const IntroSectionWrapper = styled.section`
   position:relative;
-  
-
   grid-column:2 /span 2;
-  height:50vh;
-  margin-top:5rem;
+  min-height:40vh;
+  margin-top:3rem;
 
   &:before {
     position:absolute;
@@ -25,51 +25,47 @@ const IntroSectionWrapper = styled.section`
     @media only screen and (min-width: 800px) {  
       font-size:13rem;
     } 
+    @media only screen and (min-width: 1000px) {  
+    font-size:20rem;
+    } 
   }
 
   button {
     margin-top:2rem;
   }
 
-  p{
-    margin-top:1rem;
+    p{
+      margin-top:1rem;
+      line-height: 3rem;
+      @media only screen and (min-width: 800px) {  
+        font-size:2rem;
+    } 
+
   }
 `;
 const IntroContent = styled.div`
   font-weight:500;
   @media only screen and (min-width: 600px) {  
       width:70%;
+      max-width:650px;
   } 
-  @media only screen and (min-width: 800px) {  
-      width:50%;
-  } 
+
 `;
 
 const IntroTitle = styled.h1`
   display:flex;
   flex-direction:column; 
-`;
+  @media only screen and (min-width: 800px) {  
+    font-size:5rem;
+  } 
 
+  span {
+    font-size:1.6rem;
+    @media only screen and (min-width: 800px) {  
+    font-size:2rem;
+  } 
+  }
 
-
-const IntroSubTitle = styled.span`
-   position:relative;
-   font-size:1.6rem;
-   font-weight:500;
-   margin-left:3rem;
-   
-
-   &:before {
-     position:absolute;
-     top:50%;
-     left: -3rem;
-     content:'';
-     display:block;
-     height:.25rem;
-     width:2rem;
-     background:#0099F2;
-     transform:translateY(-50%);
-   }
 `;
 
 const SpecialText = styled.span`
@@ -77,15 +73,7 @@ const SpecialText = styled.span`
    color: #0099F2;
 `;
 
-const IntroBtn = styled.button`
-   height:4rem;
-   min-width:12rem;
-   background:#000;
-   color:#fff;
-   border:none;
-   text-transform:uppercase;
-   cursor: pointer;
-`;
+
 
 
 const IntroSection = () =>
@@ -93,7 +81,7 @@ const IntroSection = () =>
     <IntroSectionWrapper>
       <IntroContent>
         <IntroTitle>
-          <IntroSubTitle>Nazywam się Paweł i jestem</IntroSubTitle>
+          <TextDecoration>Nazywam się Paweł i jestem</TextDecoration>
                         Junior Front End Developerem
                 </IntroTitle>
         <p>
@@ -101,9 +89,9 @@ const IntroSection = () =>
                 Gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
         </p>
       </IntroContent>
-      <IntroBtn>
+      <Button>
         Portfolio
-             </IntroBtn>
+        </Button>
     </IntroSectionWrapper>
   );
 

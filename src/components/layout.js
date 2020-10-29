@@ -10,6 +10,13 @@ const LayoutWrapper = styled.div`
   @media only screen and (min-width: 1200px) {
     grid-template-columns:1fr 600px 600px 1fr;
   } 
+
+  p {
+
+    @media only screen and (min-width: 800px) {
+     font-size:1.8rem;
+   }
+  }
 `;
 
 
