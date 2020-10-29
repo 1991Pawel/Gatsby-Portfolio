@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import styled from 'styled-components'
+import React, { useState, createRef, useEffect } from 'react'
+import styled, { css } from 'styled-components'
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import Logo from './Logo'
-
 
 const ToggleButton = styled.button`
     display:block;
@@ -13,6 +13,12 @@ const ToggleButton = styled.button`
     margin: 0;
     margin-left:auto;
     z-index:10;
+    
+    ${props => props.navbarOpen && css`
+        position:fixed;
+        top:1.8rem;
+        right:1rem;
+  `}
 
     @media only screen and (min-width: 600px) {
         display: none;
@@ -84,7 +90,7 @@ const Nav = styled.nav`
         flex-direction:column;
         align-items:center;
         justify-content:center;
-        transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};
+        transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};       
         background-color:#0077ED;
         transition: transform .3s;
         z-index:9;
@@ -116,22 +122,35 @@ const Nav = styled.nav`
 
 const Navigation = () => {
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const yourElement = createRef();
+
+    const handleCloseMenu = (e) => {
+        if (yourElement.current && yourElement.current.contains(e.target)) {
+            setNavbarOpen(false)
+        }
+    }
+
+
+    useEffect(() => {
+        window.addEventListener("click", handleCloseMenu);
+        return () => {
+
+            window.removeEventListener("click", handleCloseMenu);
+        };
+    });
 
     return (
         <Nav navbarOpen={navbarOpen}>
             <Logo />
-            <ul>
+            <ul ref={yourElement}>
                 <li>
-                    <a href="">Start</a>
+                    <AnchorLink to="/#intro" title="start" />
                 </li>
                 <li>
-                    <a href="">Portfolio</a>
+                    <AnchorLink to="/#project" title="portfolio" />
                 </li>
                 <li>
-                    <a href="">O mnie</a>
-                </li>
-                <li>
-                    <a href="">Kontakt</a>
+                    <AnchorLink to="/#contact" title="kontakt" />
                 </li>
             </ul>
             <ToggleButton

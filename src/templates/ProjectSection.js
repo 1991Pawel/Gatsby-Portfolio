@@ -32,9 +32,9 @@ const PortfolioSectionWrapper = styled.section`
 const ProjectContent = styled.div`
   width:100%; 
 
-  p {
-      margin:2rem 0;
-  }
+ p:first-of-type {
+  margin: 2rem 0;
+ }
 
 
   @media only screen and (min-width: 600px) {  
@@ -127,30 +127,28 @@ const ProjectSection = () => {
 
 
   return (
-    <PortfolioSectionWrapper>
+    <PortfolioSectionWrapper id="project">
       <h2>Portfolio</h2>
       <Project>
         <ProjectContent>
           <h3>Landing Page</h3>
           <p>
-            Kodsadmercyjny projekt wykonany dla fotografa.
-            Strona posiada połączenie z hedless CMS
-            Komercyjny projekt wykonany dla fotografa.
-            Strona posiada połączenie z hedless CMS
+            Komercyjny projekt wykonany dla fotografa,
+            strona posiada połączenie z hedless CMS
                     </p>
           <p><TextDecoration>
             Technologie
                     </TextDecoration></p>
           <p>HTML , SCSS, GATSBY, GRAPHQL, DATOCMS</p>
-          <Button>
+          <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
             Uruchom
-                    </Button>
-          <Button secondary>
+          </Button>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/gatsby-cms">
             GitHub
-                 </Button>
+          </Button>
         </ProjectContent>
         <ProjectPhoto props={FirstProject}>
-          <img src={FirstSampel} />
+          <img src={FirstSampel} alt="project photography website" />
         </ProjectPhoto>
       </Project>
       <Project>
@@ -164,38 +162,38 @@ const ProjectSection = () => {
             Technologie
                     </TextDecoration>
           <p>HTML , CSS, JS</p>
-          <Button>
+          <Button target="_blank" rel="noreferrer" href="http://korzeniecka.pl/">
             Uruchom
                     </Button>
-          <Button secondary>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/fitness-website">
             GitHub
                     </Button>
         </ProjectContent>
         <ProjectPhoto props={SecondProject}>
-          <img src={SecondSampel} />
+          <img src={SecondSampel} alt="project fitness website" />
         </ProjectPhoto>
       </Project>
       <Project>
         <ProjectContent>
-          <h3>Landing Page</h3>
+          <h3>YourTask</h3>
           <p>
-            Aplikacja do zarzadzania zadaniami
-            dzięki niej łatwiej sledzić co jeszcze
+            Aplikacja do zarzadzania zadaniami,
+            dzięki niej łatwiej śledzić co jeszcze
             musimy wykonać i jaki jest stan zadania.
                     </p>
           <TextDecoration>
             Technologie
                     </TextDecoration>
-          <p>REACT, TYPESCRIPT, FIREBASE, styled components</p>
-          <Button>
+          <p>REACT, TYPESCRIPT, FIREBASE, STYLED COMPONENTS</p>
+          <Button target="_blank" rel="noreferrer" href="https://yourtaskapp.netlify.app/">
             Uruchom
                     </Button>
-          <Button secondary>
+          <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/react-firebase">
             GitHub
-                    </Button>
+           </Button>
         </ProjectContent>
         <ProjectPhoto props={ThirdSamepl}>
-          <img src={ThirdProject} />
+          <img src={ThirdProject} alt="project todo app" />
         </ProjectPhoto>
       </Project>
     </PortfolioSectionWrapper>

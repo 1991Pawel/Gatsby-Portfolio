@@ -1,6 +1,6 @@
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
 import React from 'react'
 import styled from 'styled-components';
-import { Button } from '../components/Button';
 import { TextDecoration } from '../components/TextDecoration';
 
 const IntroSectionWrapper = styled.section`
@@ -30,8 +30,20 @@ const IntroSectionWrapper = styled.section`
     } 
   }
 
-  button {
+  a {
     margin-top:2rem;
+    display:inline-flex;
+    justify-content:center;
+    align-items:center;
+    height:4rem;
+    min-width:12rem;
+    background:#000;
+    color:#fff;
+    border:none;
+    text-transform:uppercase;
+    cursor: pointer;
+    margin:3rem 0;
+    text-decoration:none;
   }
 
     p{
@@ -78,20 +90,18 @@ const SpecialText = styled.span`
 
 const IntroSection = () =>
   (
-    <IntroSectionWrapper>
+    <IntroSectionWrapper id="intro">
       <IntroContent>
         <IntroTitle>
           <TextDecoration>Nazywam się Paweł i jestem</TextDecoration>
                         Junior Front End Developerem
                 </IntroTitle>
         <p>
-          Zapraszam cię do zobaczenia moich projektów
-                Gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
+          Zapraszam Cię do zobaczenia moich projektów
+                , gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu, jak i <SpecialText>UI/UX</SpecialText> aplikacji.
         </p>
       </IntroContent>
-      <Button>
-        Portfolio
-        </Button>
+      <AnchorLink to="/#project" title="portfolio" />
     </IntroSectionWrapper>
   );
 

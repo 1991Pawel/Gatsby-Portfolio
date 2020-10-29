@@ -17,4 +17,11 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+a {
+  transition: .2s all;
+}
+a:hover {
+  opacity:.5;
+}
+
 

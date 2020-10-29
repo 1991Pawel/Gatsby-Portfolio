@@ -2,6 +2,7 @@ import React from "react"
 import Layout from '../components/Layout'
 import IntroSection from '../templates/IntroSection'
 import ProjectSection from '../templates/ProjectSection'
+import ContactSection from '../templates/ContactSection'
 
 
 
@@ -10,8 +11,9 @@ import ProjectSection from '../templates/ProjectSection'
 
 const IndexPage = () => (
   <Layout>
-    <IntroSection />
-    <ProjectSection />
+    <IntroSection id="intro" />
+    <ProjectSection id="project" />
+    <ContactSection />
   </Layout>
 )
 
