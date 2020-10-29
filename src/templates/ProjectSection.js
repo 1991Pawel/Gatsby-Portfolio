@@ -133,7 +133,7 @@ const ProjectSection = () => {
         <ProjectContent>
           <h3>Landing Page</h3>
           <p>
-            Kodsadmercyjny projekt wykonany dla fotografa.
+            Komercyjny projekt wykonany dla fotografa.
             Strona posiada połączenie z hedless CMS
             Komercyjny projekt wykonany dla fotografa.
             Strona posiada połączenie z hedless CMS
@@ -142,15 +142,15 @@ const ProjectSection = () => {
             Technologie
                     </TextDecoration></p>
           <p>HTML , SCSS, GATSBY, GRAPHQL, DATOCMS</p>
-          <Button>
+          <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
             Uruchom
-                    </Button>
+          </Button>
           <Button secondary>
             GitHub
-                 </Button>
+          </Button>
         </ProjectContent>
         <ProjectPhoto props={FirstProject}>
-          <img src={FirstSampel} />
+          <img src={FirstSampel} alt="project photography website" />
         </ProjectPhoto>
       </Project>
       <Project>
@@ -172,7 +172,7 @@ const ProjectSection = () => {
                     </Button>
         </ProjectContent>
         <ProjectPhoto props={SecondProject}>
-          <img src={SecondSampel} />
+          <img src={SecondSampel} alt="project fitness website" />
         </ProjectPhoto>
       </Project>
       <Project>
@@ -186,7 +186,7 @@ const ProjectSection = () => {
           <TextDecoration>
             Technologie
                     </TextDecoration>
-          <p>REACT, TYPESCRIPT, FIREBASE, styled components</p>
+          <p>REACT, TYPESCRIPT, FIREBASE, STYLED COMPONENTS</p>
           <Button>
             Uruchom
                     </Button>
@@ -195,7 +195,7 @@ const ProjectSection = () => {
                     </Button>
         </ProjectContent>
         <ProjectPhoto props={ThirdSamepl}>
-          <img src={ThirdProject} />
+          <img src={ThirdProject} alt="project todo app" />
         </ProjectPhoto>
       </Project>
     </PortfolioSectionWrapper>

@@ -128,9 +128,6 @@ const Navigation = () => {
                     <a href="">Portfolio</a>
                 </li>
                 <li>
-                    <a href="">O mnie</a>
-                </li>
-                <li>
                     <a href="">Kontakt</a>
                 </li>
             </ul>

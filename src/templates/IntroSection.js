@@ -30,7 +30,7 @@ const IntroSectionWrapper = styled.section`
     } 
   }
 
-  button {
+  a {
     margin-top:2rem;
   }
 
@@ -86,12 +86,12 @@ const IntroSection = () =>
                 </IntroTitle>
         <p>
           Zapraszam cię do zobaczenia moich projektów
-                Gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
+                gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu jak i <SpecialText>UI/UX</SpecialText> aplikacji.
         </p>
       </IntroContent>
       <Button>
         Portfolio
-        </Button>
+      </Button>
     </IntroSectionWrapper>
   );
 
