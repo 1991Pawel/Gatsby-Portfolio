@@ -15,26 +15,34 @@ const ContactSectionWrapper = styled.section`
 const StyledContactListWrapper = styled.ul`
 
   display: flex;
+  flex-direction:row;
   flex-wrap:wrap;
+  justify-content:center;
   
   a {
     border:none;
-    padding:1rem;
+    padding:2rem;
     margin-left: auto;
     background-color:#000;
     margin:0;
+
+    @media (min-width: 800px) {
+    padding:2.5rem;
+  }
   }
 
    @media (min-width: 800px) {
     display: flex;
     justify-content: center;
+    padding:2rem 0;
   }
 
 `;
 
 const StyledContactItem = styled.li`
   list-style: none;
-  padding: 1rem;
+  padding: 1rem 0;
+  margin:1rem;
 
 
   img {

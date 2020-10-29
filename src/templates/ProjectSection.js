@@ -32,9 +32,9 @@ const PortfolioSectionWrapper = styled.section`
 const ProjectContent = styled.div`
   width:100%; 
 
-  p {
-      margin:2rem 0;
-  }
+ p:first-of-type {
+  margin: 2rem 0;
+ }
 
 
   @media only screen and (min-width: 600px) {  
@@ -175,10 +175,10 @@ const ProjectSection = () => {
       </Project>
       <Project>
         <ProjectContent>
-          <h3>Landing Page</h3>
+          <h3>YourTask</h3>
           <p>
             Aplikacja do zarzadzania zadaniami,
-            dzięki niej łatwiej sledzić co jeszcze
+            dzięki niej łatwiej śledzić co jeszcze
             musimy wykonać i jaki jest stan zadania.
                     </p>
           <TextDecoration>
