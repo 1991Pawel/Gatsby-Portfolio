@@ -96,6 +96,7 @@ const ProjectPhoto = styled.div`
   @media only screen and (min-width: 600px) {  
       height:500px;
       width:100%;
+
     } 
     
   @media only screen and (min-width: 800px) {  
