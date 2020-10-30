@@ -5,11 +5,11 @@ import styled from 'styled-components'
 
 const StyledHeader = styled.header`
   grid-column:2/ span 2;
-  /* padding:0 1rem; */
+  
 `;
 
 const HeaderWrapper = styled.div`
-  max-width:1200px;
+  max-width:1400px;
   margin:0 auto;
 `;
 

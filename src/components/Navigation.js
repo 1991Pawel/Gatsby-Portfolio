@@ -70,6 +70,7 @@ const Nav = styled.nav`
     display:flex;
     align-items:center;
     height:8rem;
+    
 
     @media only screen and (min-width: 600px) {
      
