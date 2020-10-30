@@ -6,9 +6,6 @@ import ContactSection from '../templates/ContactSection'
 
 
 
-
-
-
 const IndexPage = () => (
   <Layout>
     <IntroSection />
