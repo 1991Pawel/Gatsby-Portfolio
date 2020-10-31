@@ -7,7 +7,15 @@ const IntroSectionWrapper = styled.section`
   position:relative;
   grid-column:2 /span 2;
   min-height:40vh;
-  margin-top:3rem;
+  margin-top:4rem;
+
+  padding-top:8rem;
+    
+  @media only screen and (min-width: 600px) {
+     padding-top:10rem;
+  
+  } 
+
 
   &:before {
     position:absolute;

@@ -6,7 +6,7 @@ import "./layout.css"
 
 const LayoutWrapper = styled.div`
   display:grid;
-  grid-template-columns:1rem 1fr 1fr 1rem;
+  grid-template-columns:1.25rem 1fr 1fr 1.25rem;
   max-width:1400px;
   margin:0 auto;
   
