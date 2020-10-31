@@ -69,14 +69,8 @@ const Nav = styled.nav`
     position: relative;
     display:flex;
     align-items:center;
-    height:8rem;
-    
+    height:100%;
 
-    @media only screen and (min-width: 600px) {
-     
-     height:10rem;
-  
-    } 
 
 
   ul {
