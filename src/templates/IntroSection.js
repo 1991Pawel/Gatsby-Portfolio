@@ -13,7 +13,7 @@ const IntroSectionWrapper = styled.section`
     
   @media only screen and (min-width: 600px) {
      padding-top:10rem;
-  
+     min-height:48vh;
   } 
 
 

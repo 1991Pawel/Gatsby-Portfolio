@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import { Button } from '../components/Button'
 import { TextDecoration } from '../components/TextDecoration'
 
@@ -10,6 +10,30 @@ import SecondSampel from '../images/second-sampel.jpg'
 import ThirdProject from '../images/third-project.png'
 import ThirdSamepl from '../images/third-sampel.png'
 
+
+
+
+
+
+const leftSide = keyframes`
+  0%, 100% {
+    transform:translate(-20%,-46%);
+  }
+  50% {
+    transform:translate(-20%,-50%);
+  }
+}`
+
+const rightSide = keyframes`
+ 0%, 100% {
+    transform:translate(-80%,-46%);
+  }
+  50% {
+    transform:translate(-80%,-50%);
+  }
+}
+
+`
 
 
 const PortfolioSectionWrapper = styled.section`
@@ -32,7 +56,6 @@ const PortfolioSectionWrapper = styled.section`
 
 const ProjectContent = styled.div`
   width:100%; 
-
  p:first-of-type {
   margin: 2rem 0;
  }
@@ -53,19 +76,32 @@ const Project = styled.div`
   display:flex;
   flex-direction:column;   
   margin: 7rem 0;
+  img {
+    @media only screen and (min-width: 800px) {  
+            animation-name: ${rightSide};
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+             animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);
+            
+        }
+  }
 
       &:nth-of-type(even){
         ${ProjectContent} {
           @media only screen and (min-width: 800px) {  
             order:2; 
+         
       }
-    }
-       
+    }      
       img:nth-of-type(1) {
         @media only screen and (min-width: 800px) {  
-            transform:translate(-20%,-50%);
-            
+            transform:translate(-20%,-50%);   
+            animation-name: ${leftSide};
+            animation-duration: 6s;
+            animation-iteration-count: infinite;
+             animation-timing-function:cubic-bezier(0.445, 0.05, 0.55, 0.95);   
         }
+        
       }
     }
   
@@ -93,6 +129,7 @@ const ProjectPhoto = styled.div`
   background-image: url(${({ props }) => props});
   background-size: cover;
   background-repeat:no-repeat;
+  
 
   @media only screen and (min-width: 600px) {  
       height:500px;
@@ -113,6 +150,7 @@ const ProjectPhoto = styled.div`
     max-width: 80%;
     transform:translate(-50%,-50%);
     filter: drop-shadow(0px 14px 28px rgba(0,0,0,0.3));
+
 
  
     @media only screen and (min-width: 800px) {  
