@@ -86,9 +86,9 @@ const Nav = styled.nav`
         align-items:center;
         justify-content:center;
         transform: ${({ navbarOpen }) => navbarOpen ? 'translateX(0)' : 'translateX(-100%)'};       
-        background-color:#0077ED;
         transition: transform .3s;
         z-index:9;
+        background-color:#FBFBFD;
     } 
     
     li {
@@ -109,7 +109,7 @@ const Nav = styled.nav`
 
         @media only screen and (max-width: 600px) {
         font-size:2rem;
-        color:#fff;
+        color:#000;
         } 
     }
 }`;
