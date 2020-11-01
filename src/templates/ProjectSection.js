@@ -17,19 +17,19 @@ import ThirdSamepl from '../images/third-sampel.png'
 
 const leftSide = keyframes`
   0%, 100% {
-    transform:translate(-20%,-46%);
+    transform:translate(-20%,-48%);
   }
   50% {
-    transform:translate(-20%,-50%);
+    transform:translate(-20%,-52%);
   }
 }`
 
 const rightSide = keyframes`
  0%, 100% {
-    transform:translate(-80%,-46%);
+    transform:translate(-80%,-52%);
   }
   50% {
-    transform:translate(-80%,-50%);
+    transform:translate(-80%,-48%);
   }
 }
 
@@ -59,7 +59,6 @@ const ProjectContent = styled.div`
  p:first-of-type {
   margin: 2rem 0;
  }
-
 
   @media only screen and (min-width: 600px) {  
      max-width:500px;
@@ -176,9 +175,9 @@ const ProjectSection = () => {
             Komercyjny projekt wykonany dla fotografa,
             strona posiada połączenie z hedless CMS
                     </p>
-          <p><TextDecoration>
+          <TextDecoration>
             Technologie
-                    </TextDecoration></p>
+            </TextDecoration>
           <p>HTML , SCSS, GATSBY, GRAPHQL, DATOCMS</p>
           <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
             Uruchom
@@ -223,7 +222,7 @@ const ProjectSection = () => {
                     </p>
           <TextDecoration>
             Technologie
-                    </TextDecoration>
+           </TextDecoration>
           <p>REACT, TYPESCRIPT, FIREBASE, STYLED COMPONENTS</p>
           <Button target="_blank" rel="noreferrer" href="https://yourtaskapp.netlify.app/">
             Uruchom
