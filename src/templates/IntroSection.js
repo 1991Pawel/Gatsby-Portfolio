@@ -102,11 +102,11 @@ const IntroSection = () =>
       <IntroContent>
         <IntroTitle>
           <TextDecoration>Nazywam się Paweł i jestem</TextDecoration>
-                        Junior Front End Developerem
-                </IntroTitle>
+            Front End Developerem
+        </IntroTitle>
         <p>
           Zapraszam Cię do zobaczenia moich projektów
-                , gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu, jak i <SpecialText>UI/UX</SpecialText> aplikacji.
+                , gdzie stawiam zarówno na <SpecialText>jakość</SpecialText> kodu, jak i <SpecialText>wygląd</SpecialText> aplikacji.
         </p>
       </IntroContent>
       <AnchorLink to="/#project" title="portfolio" />

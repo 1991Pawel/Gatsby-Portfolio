@@ -10,8 +10,12 @@ const ContactSectionWrapper = styled.section`
   grid-column:2 /span 2;
   padding:3rem 0;
   
-  h2 {
+  h2,p {
     text-align:center;
+  }
+  p {
+    margin-top:2rem;
+    font-weight:500;
   }
 
 `;
@@ -63,6 +67,7 @@ const ContactSection = () => {
   return (
     <ContactSectionWrapper id="contact">
       <h2>Kontakt</h2>
+      <p>Jestem gotowy do działania i czekam na twoja wiadomość.</p>
       <StyledContactListWrapper>
         <StyledContactItem>
           <StyledLink href="mailto: lesnik.pawel1991@gmail.com">

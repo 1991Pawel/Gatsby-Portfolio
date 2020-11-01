@@ -139,7 +139,7 @@ const Navigation = () => {
             <Logo />
             <ul ref={yourElement}>
                 <li>
-                    <AnchorLink to="/#intro" title="start" />
+                    <AnchorLink to="/#intro" title="strona główna" />
                 </li>
                 <li>
                     <AnchorLink to="/#project" title="portfolio" />
