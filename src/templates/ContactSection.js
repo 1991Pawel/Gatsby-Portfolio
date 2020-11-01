@@ -9,6 +9,10 @@ import mobile from '../images/mobilephone.svg';
 const ContactSectionWrapper = styled.section`
   grid-column:2 /span 2;
   padding:3rem 0;
+  
+  h2 {
+    text-align:center;
+  }
 
 `;
 
