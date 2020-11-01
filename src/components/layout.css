@@ -19,7 +19,7 @@ body {
 }
 
 a {
-  transition: .2s all;
+  transition: .3s all ease-in-out;
 }
 a:hover {
   opacity:.5;
