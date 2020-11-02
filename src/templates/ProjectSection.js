@@ -60,6 +60,14 @@ const ProjectContent = styled.div`
   margin: 2rem 0;
  }
 
+ span {
+   font-size:1.8rem;
+ }
+
+ p:last-of-type {
+   font-size:1.6rem;
+ }
+
   @media only screen and (min-width: 600px) {  
      max-width:500px;
     }
