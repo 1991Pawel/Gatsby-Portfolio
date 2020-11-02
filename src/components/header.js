@@ -10,15 +10,12 @@ const StyledHeader = styled.header`
   left:0;
   right:0;
   width:100%;
-  height:${({ isScroll }) => isScroll ? '8rem' : '10rem'};
+  height:${({ isScroll }) => isScroll ? '6rem' : '10rem'};
   z-index:99;
   padding:1.25rem;
   transition:.5s ease-in-out;
   background-color:${({ isScroll }) => isScroll ? '#F9F9F9' : '#FFF'};
-    
-  @media only screen and (min-width: 600px) {
-     /* height:10rem; */
-    } 
+  
 `;
 
 
