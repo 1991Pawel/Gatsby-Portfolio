@@ -1,5 +1,5 @@
 import React from "react"
-import Header from "./Header"
+import Header from "./header"
 import styled from 'styled-components'
 import { Helmet } from "react-helmet"
 import "./layout.css"

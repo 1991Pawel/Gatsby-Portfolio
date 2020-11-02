@@ -70,6 +70,8 @@ const Nav = styled.nav`
     display:flex;
     align-items:center;
     height:100%;
+    max-width:1400px;
+    margin:0 auto;
 
 
 
