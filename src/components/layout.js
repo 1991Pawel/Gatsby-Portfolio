@@ -11,7 +11,6 @@ const LayoutWrapper = styled.div`
   margin:0 auto;
   
  
-
   p {
 
     @media only screen and (min-width: 800px) {

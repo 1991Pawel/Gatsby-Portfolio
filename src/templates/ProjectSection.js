@@ -65,7 +65,20 @@ const ProjectContent = styled.div`
  }
 
  p:last-of-type {
-   font-size:1.6rem;
+   display:flex;
+   align-items:center;
+   flex-wrap:wrap;
+ 
+   span {
+    text-align:center;
+    font-size:1.3rem;
+    display:block;
+    margin:.5rem;
+    background-color:#F0F0F0;
+    padding:.2rem .8rem;
+    border-radius:.3rem;
+    color:#424242;
+   }
  }
 
   @media only screen and (min-width: 600px) {  
@@ -186,7 +199,13 @@ const ProjectSection = () => {
           <TextDecoration>
             Technologie
             </TextDecoration>
-          <p>HTML , SCSS, GATSBY, GRAPHQL, DATOCMS</p>
+          <p>
+            <span>HTML</span>
+            <span>SCSS</span>
+            <span>GATSBY</span>
+            <span>GRAPHQL</span>
+            <span>DATOCMS</span>
+          </p>
           <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
             Uruchom
           </Button>
@@ -208,7 +227,11 @@ const ProjectSection = () => {
           <TextDecoration>
             Technologie
                     </TextDecoration>
-          <p>HTML , CSS, JS</p>
+          <p>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </p>
           <Button target="_blank" rel="noreferrer" href="http://korzeniecka.pl/">
             Uruchom
                     </Button>
@@ -231,7 +254,12 @@ const ProjectSection = () => {
           <TextDecoration>
             Technologie
            </TextDecoration>
-          <p>REACT, TYPESCRIPT, FIREBASE, STYLED COMPONENTS</p>
+          <p>
+            <span>REACT</span>
+            <span>TYPESCRIPT</span>
+            <span>FIREBASE</span>
+            <span>STYLED COMPONENTS</span>
+          </p>
           <Button target="_blank" rel="noreferrer" href="https://yourtaskapp.netlify.app/">
             Uruchom
                     </Button>
