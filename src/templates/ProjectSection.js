@@ -71,7 +71,7 @@ const ProjectContent = styled.div`
  
    span {
     text-align:center;
-    font-size:1.3rem;
+    font-size:1.5rem;
     display:block;
     margin:.5rem;
     background-color:#F0F0F0;
