@@ -206,7 +206,7 @@ const ProjectSection = () => {
             <span>GRAPHQL</span>
             <span>DATOCMS</span>
           </p>
-          <Button target="_blank" rel="noreferrer" href="https://michal-wrocenski.netlify.app/">
+          <Button target="_blank" rel="noreferrer" href="https:/wrocenski.pl">
             Uruchom
           </Button>
           <Button secondary target="_blank" rel="noreferrer" href="https://github.com/1991Pawel/gatsby-cms">
