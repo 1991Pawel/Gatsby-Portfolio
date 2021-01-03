@@ -228,9 +228,9 @@ const ProjectSection = () => {
             Technologie
                     </TextDecoration>
           <p>
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JS</span>
+            <span>NEXT.JS</span>
+            <span>SCSS</span>
+            <span>REACT-QUERY</span>
           </p>
           <Button target="_blank" rel="noreferrer" href="http://korzeniecka.pl/">
             Uruchom
