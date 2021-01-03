@@ -194,7 +194,7 @@ const ProjectSection = () => {
           <h3>Landing Page</h3>
           <p>
             Komercyjny projekt wykonany dla fotografa,
-            strona posiada połączenie z hedless CMS
+            strona posiada połączenie z headless CMS
                     </p>
           <TextDecoration>
             Technologie
