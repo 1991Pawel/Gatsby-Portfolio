@@ -279,7 +279,7 @@ const ProjectSection = () => {
           <Button
             target="_blank"
             rel="noreferrer"
-            href="https://newstylecabinets.com/"
+            href="http://www.newhomecabinets.com/"
           >
             Uruchom
           </Button>
