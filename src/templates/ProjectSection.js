@@ -197,10 +197,7 @@ const ProjectSection = () => {
       <Project>
         <ProjectContent>
           <h3>Landing Page</h3>
-          <p>
-            Pierwszy komercyjny projekt wykonany dla trenera sportów
-            sylwetkowych.
-          </p>
+          <p>Komercyjny projekt wykonany dla trenera sportów sylwetkowych.</p>
           <TextDecoration>Technologie</TextDecoration>
           <p>
             <span>NEXT.JS</span>
@@ -230,10 +227,7 @@ const ProjectSection = () => {
       <Project>
         <ProjectContent>
           <h3>YourTask</h3>
-          <p>
-            Aplikacja do zarzadzania zadaniami, dzięki niej łatwiej śledzić co
-            jeszcze musimy wykonać i jaki jest stan zadania.
-          </p>
+          <p>Aplikacja do zarządzania zadaniami</p>
           <TextDecoration>Technologie</TextDecoration>
           <p>
             <span>REACT</span>
@@ -263,7 +257,7 @@ const ProjectSection = () => {
       </Project>
       <Project>
         <ProjectContent>
-          <h3>YourTask</h3>
+          <h3>Landing Page</h3>
           <p>
             Strona wykonana na zlecenie zagranicznego klienta pod dostarczony
             layout.
