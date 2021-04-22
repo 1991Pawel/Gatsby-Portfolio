@@ -11,6 +11,10 @@ import ThirdProject from "../images/third-project.png"
 import ThirdSamepl from "../images/third-sampel.png"
 import FourProject from "../images/four-project.jpg"
 import FourSampel from "../images/four-sampel.jpg"
+import FiveSampel from "../images/five-sampel.jpg"
+import FiveProject from "../images/five-project.jpg"
+import SixProject from "../images/six-project.jpg"
+import SixSampel from "../images/six-sampel.jpg"
 
 const leftSide = keyframes`
   0%, 100% {
@@ -168,7 +172,7 @@ const ProjectSection = () => {
           <h3>Landing Page</h3>
           <p>
             Komercyjny projekt wykonany dla fotografa, strona posiada połączenie
-            z headless CMS
+            z headless CMS.
           </p>
           <TextDecoration>Technologie</TextDecoration>
           <p>
@@ -226,8 +230,42 @@ const ProjectSection = () => {
       </Project>
       <Project>
         <ProjectContent>
+          <h3>Koszyk sklepu</h3>
+          <p>
+            Aplikacja w trakcie budowy, aktualnie obsługuje dodawanie i usuwanie
+            produktów z koszyka.
+          </p>
+          <TextDecoration>Technologie</TextDecoration>
+          <p>
+            <span>NEXT.JS</span>
+            <span>NODE</span>
+            <span>EXPRESS</span>
+            <span>MONGODB</span>
+          </p>
+          <Button
+            target="_blank"
+            rel="noreferrer"
+            href="https://beststore.vercel.app/"
+          >
+            Uruchom
+          </Button>
+          <Button
+            secondary
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/1991Pawel/e-comerce-next"
+          >
+            GitHub
+          </Button>
+        </ProjectContent>
+        <ProjectPhoto props={FiveSampel}>
+          <img src={FiveProject} alt="store project" />
+        </ProjectPhoto>
+      </Project>
+      <Project>
+        <ProjectContent>
           <h3>YourTask</h3>
-          <p>Aplikacja do zarządzania zadaniami</p>
+          <p>Aplikacja do zarządzania zadaniami.</p>
           <TextDecoration>Technologie</TextDecoration>
           <p>
             <span>REACT</span>
@@ -253,6 +291,38 @@ const ProjectSection = () => {
         </ProjectContent>
         <ProjectPhoto props={ThirdSamepl}>
           <img src={ThirdProject} alt="project todo app" />
+        </ProjectPhoto>
+      </Project>
+      <Project>
+        <ProjectContent>
+          <h3>Gra Refleks</h3>
+          <p>
+            Rozgrywka polega na trafieniu jak najwiecej razy Homera Simpsona
+            przed upływem czasu.
+          </p>
+          <TextDecoration>Technologie</TextDecoration>
+          <p>
+            <span>REACT</span>
+            <span>TYPESCRIPT</span>
+          </p>
+          <Button
+            target="_blank"
+            rel="noreferrer"
+            href="https://reflex-game.netlify.app/"
+          >
+            Uruchom
+          </Button>
+          <Button
+            secondary
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/1991Pawel/reflex-game"
+          >
+            GitHub
+          </Button>
+        </ProjectContent>
+        <ProjectPhoto props={SixProject}>
+          <img src={SixSampel} alt="Reflex game" />
         </ProjectPhoto>
       </Project>
       <Project>
