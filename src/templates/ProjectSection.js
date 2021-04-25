@@ -233,11 +233,12 @@ const ProjectSection = () => {
           <h3>Koszyk sklepu</h3>
           <p>
             Aplikacja w trakcie budowy, aktualnie obsługuje dodawanie i usuwanie
-            produktów z koszyka.
+            produktów z koszyka oraz logowanie i rejestracje użytkownika.
           </p>
           <TextDecoration>Technologie</TextDecoration>
           <p>
             <span>NEXT.JS</span>
+            <span>BCRYPT</span>
             <span>NODE</span>
             <span>EXPRESS</span>
             <span>MONGODB</span>
