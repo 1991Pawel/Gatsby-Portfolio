@@ -60,7 +60,7 @@ const ContactSection = () => {
   return (
     <ContactSectionWrapper id="contact">
       <h2>Kontakt</h2>
-      <p>Jestem gotowy do działania i czekam na twoją wiadomość.</p>
+      <p>Jestem gotowy do działania i czekam na Twoją wiadomość.</p>
       <StyledContactListWrapper>
         <StyledContactItem>
           <StyledLink href="mailto: lesnik.pawel1991@gmail.com">
