@@ -3,6 +3,8 @@ import styled, { keyframes } from "styled-components"
 import { Button } from "../components/Button"
 import { TextDecoration } from "../components/TextDecoration"
 
+
+
 import FirstProject from "../images/first.jpg"
 import FirstSampel from "../images/first-sampel.jpg"
 import SecondProject from "../images/second-project.jpg"
@@ -15,6 +17,8 @@ import FiveSampel from "../images/five-sampel.jpg"
 import FiveProject from "../images/five-project.jpg"
 import SixProject from "../images/six-project.jpg"
 import SixSampel from "../images/six-sampel.jpg"
+import SevenProject from "../images/seven-project.jpg"
+import SevenSampel from "../images/seven-sampel.jpg"
 
 const leftSide = keyframes`
   0%, 100% {
@@ -167,6 +171,35 @@ const ProjectSection = () => {
   return (
     <PortfolioSectionWrapper id="project">
       <h2>Portfolio</h2>
+      <Project>
+        <ProjectContent>
+          <h3>Landing Page</h3>
+          <p>
+            Strona dla firmy zajmującej się hydrauliką. 
+          </p>
+          <TextDecoration>Technologie</TextDecoration>
+          <p>
+            <span>HTML</span>
+            <span>SCSS</span>
+            <span>JS</span>
+            <span>PARCEL</span>
+          </p>
+          <Button target="_blank" rel="noreferrer" href="https://www.santop.bialystok.pl/">
+            Uruchom
+          </Button>
+          <Button
+            secondary
+            target="_blank"
+            rel="noreferrer"
+            href="https://github.com/1991Pawel/santop"
+          >
+            GitHub
+          </Button>
+        </ProjectContent>
+        <ProjectPhoto props={SevenProject}>
+          <img src={SevenSampel} alt="simple website" />
+        </ProjectPhoto>
+      </Project>
       <Project>
         <ProjectContent>
           <h3>Landing Page</h3>
